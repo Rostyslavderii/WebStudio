@@ -50,6 +50,7 @@ body {
     border-color:#ECECEC;
 }
 
+/* common.scss */
 .flexbox{
     display: flex;
     align-items: center;
@@ -107,7 +108,7 @@ ol, ul {
 
 /* header-links */
 
-.header__link-active--marker, .hedaer__link {
+.header__link-active--marker, .header__link {
     position: relative;
     padding-bottom: 25px;
     font-weight: 500;
@@ -131,7 +132,7 @@ li > .header__link-active, .header__link:hover, .header__menu a:focus{
 
 
 
-.hedaer__link-active::after, .header__link::after {
+.header__link-active::after, .header__link::after {
     content: '';
     position: absolute;
     left: 0;
@@ -253,6 +254,7 @@ li > .header__link-active, .header__link:hover, .header__menu a:focus{
 .banner button:hover,  .subscription button:hover, .form .button:hover {
     transform: scale(1.05)
 }
+
 .banner button:active, .subscription button:active, .form .button:active  {
     transform:scale(0.95)
 }
