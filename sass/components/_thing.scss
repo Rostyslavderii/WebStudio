@@ -17,6 +17,14 @@
     text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+    .main__header {
+        font-size: 28px;
+        line-height: 1.17;
+        margin-bottom: 30px;
+    }
+}
+
 .main-team {
     background-color: $medium-bg-color;
     display: flex;
@@ -29,6 +37,14 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+    .photo, .photo-team {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 
@@ -53,3 +69,5 @@
     font-weight: 700;
     opacity: 0;
 }
+
+

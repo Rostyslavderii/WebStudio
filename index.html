@@ -20,6 +20,13 @@
         <div class="container flexbox">
             <nav>
                 <a class="header__logo" href="./index.html"><span class="span">Web</span>Studio</a>
+                <button type="button" class="menu__button"  aria-expanded="false" aria-controls="menu-container" data-menu-button>
+                  <svg height="40" width="40" aria-label="Переключатель меню">
+                    <use class="menu__icon-menu" href="./images/sprite-menu.svg#icon-menu"></use>
+                    <use class="menu__icon-close" href="./images/sprite-menu.svg#icon-close" ></use>
+                  </svg>
+              </button>
+        
                 <ul class="header__menu">
                     <li><a class="header__link-active header__link-active--marker" href="./index.html">Студия</a></li>
                     <li><a class="header__link " href="./portfolio.html">Портфолио</a></li>
@@ -268,11 +275,16 @@
                     </ul>
             </div>
         </section>
+        <li class="team__card aos-init aos-animate" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+
+				
+          <img class="team__foto" srcset="./images/team/team01@1x-min.jpg 1x, ./images/team/team01@2x-min.jpg 2x" src="./images/team/team01.jpg" width="270" height="260" alt="фото">
+          
         <!-- Clients Section -->
         <section class="clients section">
             <div class="container">
               <h2 class="main__header">Постоянные клиенты</h2>
-              <ul class="list flexbox">
+              <ul class="list flexbox  aos-init" data-aos="zoom-in">
                 <li class="clients__item">
                   <a class="clients__link" href="">
                     <svg class="clients__icon" width="106" height="60">
@@ -449,4 +461,7 @@
     <script src="./js/modal.js"></script>
 </body>
 </html>
+
+
+
 

@@ -4,6 +4,14 @@
     width: 100%;
 }
 
+@media screen and (min-width: 768px) {
+.team {
+    display: block;
+    width: 354px;
+    height: 374px;
+}
+}
+
 .team-item {
     display: flex;
     flex-direction: column;
@@ -13,6 +21,14 @@
     border-bottom-right-radius: 4px;
     transition: all 0.3s ease;
     background-color: $main-bg-color;
+}
+
+
+@media screen and (min-width: 768px) {
+    .team__item {
+    width: 354px;
+    height: 536px;
+    }
 }
 
 .team-item:hover {

@@ -18,12 +18,23 @@
     transition: all 0.3s ease;
 }
 
-.banner button:hover,  .subscription button:hover, .form .button:hover {
-    transform: scale(1.05)
+@media screen and (min-width: 375px){
+    .button {
+        padding: 10px 32px;
+    }
 }
 
-.banner button:active, .subscription button:active, .form .button:active  {
+.banner button,  .subscription button, .form .button {
+
+    &:hover{
+    transform: scale(1.05)
+}
+}
+
+.banner button, .subscription button, .form .button  {
+    &:active{
     transform:scale(0.95)
+}
 }
 
 

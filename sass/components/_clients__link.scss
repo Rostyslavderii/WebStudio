@@ -7,6 +7,8 @@
     color: $team-social-color;
     border: 1px solid $team-social-color;
     border-radius: 4px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .clients__item:not(:last-child) {
@@ -17,3 +19,33 @@
     color: $accent-color;
     border-color: $accent-color;
 }
+
+@media screen and (min-width: 480px) {
+    .client__item {
+      width: 210px;
+      height: 92px;
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .client__item {
+      width: 226px;
+      height: 92px;
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .client__item {
+      width: 170px;
+      height: 92px;
+      &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+  
