@@ -1,0 +1,27 @@
+
+/* subscription */
+
+.subscription {
+    margin-left: auto;
+    padding-top: 12px;
+    align-self: flex-start;
+}
+
+.subscription__input {
+    padding: 15px 16px;
+    margin-right: 12px;
+    width: 358px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    outline: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.subscription__input:focus {
+    outline: 1px solid $accent-color;
+}

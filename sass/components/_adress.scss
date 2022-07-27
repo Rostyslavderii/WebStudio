@@ -1,0 +1,42 @@
+
+/*adress-footer*/
+
+.adress {
+    padding-bottom: 60px;
+}
+
+.adress-item {
+    margin-bottom: 9px;
+}
+
+.adress-item, .adress-link {
+    color: $main-bg-color;
+    font-style: 14px;
+    line-height: 1.71;
+    font-weight: 400;
+}
+
+/* adress-icons */
+
+.adress-item:not(:first-child)  .adress-link{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.adress-item:not(:first-child)  .adress-link:hover,
+.adress-item:not(:first-child)  .adress-link:focus{
+color: $accent-color; 
+}
+
+.adress-link:hover,
+.adress-link:focus {
+color: $accent-color;
+}
+
+.adress-link {
+    text-decoration: none;
+}
+
+.footer-list {
+    display: flex;
+    align-items: center;
+}

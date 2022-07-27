@@ -1,0 +1,28 @@
+
+.header__icon, .clients__icon, .spacial__icon, .network__icon, .subscription__icon{
+    fill: currentColor;
+    display: block;
+    align-self: center;
+}
+
+.header__contacts .header__icon, .spacial__icon, .network__icon {
+ margin-right: 10px;
+}
+
+
+.form__icon {
+    position: absolute;
+    top: 50%;
+    outline: none;
+    left: 12px;
+}
+
+
+.form__checkbox--icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1.7px solid $header-color;
+    border-radius: 2px;
+    margin-right: 7px;
+}

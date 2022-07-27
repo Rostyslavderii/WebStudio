@@ -1,0 +1,66 @@
+// utils
+@import 'utils/reset';
+@import 'utils/variables';
+// @import 'components/common';
+
+
+// my base
+@import'base/body';
+@import 'base/saction';
+
+// my common
+@import 'base/common/buttons';
+@import 'base/common/container';
+@import 'base/common/buttons';
+@import 'base/common/flexbox';
+@import 'base/common/form';
+@import'base/common/form__input';
+@import 'base/common/icons';
+@import 'base/common/logo';
+@import 'base/common/overlay';
+@import 'base/common/spacial-slogan';
+@import 'base/common/thumb'; 
+
+// components
+@import 'components/_header__link';
+@import 'components/adress';
+@import 'components/clients__link';
+@import 'components/footer';
+@import 'components/form__checkbox';
+@import 'components/header';
+@import 'components/header__contacts';
+@import 'components/header__menu';
+@import 'components/main-team';
+@import 'components/main-thing';
+@import 'components/main__banner';
+@import 'components/modal-window';
+@import 'components/network-container';
+//
+@import 'components/portfolio-photo';
+@import 'components/portfolio-team';
+@import 'components/portfolio__link';
+@import 'components/social-network';
+//
+@import 'components/spacial';
+@import 'components/subscription';
+@import 'components/team';
+@import 'components/thing';
+
+
+
+// 
+// @import 'components/button';
+// @import 'components/logo';
+// @import 'components/header';
+// @import 'components/hero';
+// @import 'components/benefits';
+// @import 'components/development';
+// @import 'components/team';
+// @import 'components/client';
+// @import 'components/footer';
+// @import 'components/modal';
+// @import 'components/filters';
+// @import 'components/project';
+
+
+

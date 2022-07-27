@@ -1,0 +1,19 @@
+
+.clients__link {
+    display: block;
+    padding: 16px 32px;
+    height: 92px;
+    width: 170px;
+    color: $team-social-color;
+    border: 1px solid $team-social-color;
+    border-radius: 4px;
+}
+
+.clients__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.clients__link:hover, .clients__link:focus {
+    color: $accent-color;
+    border-color: $accent-color;
+}
