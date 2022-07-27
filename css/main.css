@@ -150,7 +150,7 @@ body {
           align-items: center;
 }
 
-.button-icon .header__icon, .spacial__icon, .network__icon {
+.button-icon .header__icon, .spacial__icon, .subscription__icon--button {
   margin-left: 10px;
 }
 
@@ -275,7 +275,7 @@ body {
           align-items: center;
 }
 
-.button-icon .header__icon, .spacial__icon, .network__icon {
+.button-icon .header__icon, .spacial__icon, .subscription__icon--button {
   margin-left: 10px;
 }
 
@@ -1108,7 +1108,7 @@ li > .spacial-heading {
 .main__header {
   font-size: 36px;
   font-weight: 700;
-  color: var(--header-color);
+  color: #212121;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
   text-align: center;
