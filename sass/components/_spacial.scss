@@ -2,8 +2,10 @@
     padding-bottom: 0px;
 }
 
-.spacial:not(:last-child) {
+.spacial{
+    &:not(:last-child) {
     margin-right: 30px;
+}
 }
 
 .spacial {

@@ -15,8 +15,10 @@
     background-color: $main-bg-color;
 }
 
-.team-item:hover {
+.team-item{
+    &:hover {
     transform: scale(1.05);
+}
 }
 
 .team-item-header{
@@ -38,8 +40,10 @@
     margin-bottom: 16px;
 }
 
-.team-item:not(:last-child) {
+.team-item{
+    &:not(:last-child) {
     margin-right: 30px;
+}
 }
 
 .team-social-list {

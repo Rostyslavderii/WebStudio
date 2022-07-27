@@ -9,9 +9,12 @@
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.social-network:hover, .social-network:focus {
+.social-network{
+    &:hover, 
+    &:focus {
     background-color: $accent-color;
     color: $main-bg-color;
+}
 }
 
 .social-network {
@@ -22,6 +25,8 @@
     border-radius: 50%;
 }
 
-.network:not(:last-child) {
+.network{
+    &:not(:last-child) {
     margin-right: 10px;
+}
 }
