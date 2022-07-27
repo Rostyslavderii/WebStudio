@@ -4,8 +4,10 @@
     transition: all 0.3s ease;
 }
 
-.thing:hover {
+.thing {
+    &:hover{
     transform: scale(1.05);
+}
 }
    
 .main__header {

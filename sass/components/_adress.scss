@@ -35,14 +35,11 @@
 }
 
 
-.adress-link,
-.adress-link {
-    &:hover {
+.adress-link{
+    &:hover,
+    &:focus {
     color: $accent-color;
 }
-    &:focus {
-        color: $accent-color;
-    }
 }
 
 .adress-link {

@@ -492,14 +492,6 @@ li > .header__link-active, li > .header__link:hover, li > .header__link:focus, .
   border-radius: 2px;
 }
 
-.header__menu a:hover {
-  color: #2196F3;
-}
-
-.header__link-active {
-  color: #2196F3;
-}
-
 /*adress-footer*/
 .adress {
   padding-bottom: 60px;
@@ -525,12 +517,7 @@ li > .header__link-active, li > .header__link:hover, li > .header__link:focus, .
   color: #2196f3;
 }
 
-.adress-link:hover,
-.adress-link:hover {
-  color: #2196f3;
-}
-.adress-link:focus,
-.adress-link:focus {
+.adress-link:hover, .adress-link:focus {
   color: #2196f3;
 }
 
