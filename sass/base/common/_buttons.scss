@@ -1,0 +1,105 @@
+
+/*button-banner*/
+
+.banner .button, .subscription .button, .form .button{
+    height: 50px;
+    width: 200px;
+    color: #fff;
+    background-color: $accent-color;
+    border: 0;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.87px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    margin: 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.banner button:hover,  .subscription button:hover, .form .button:hover {
+    transform: scale(1.05)
+}
+
+.banner button:active, .subscription button:active, .form .button:active  {
+    transform:scale(0.95)
+}
+
+
+// protfolio-buttons
+.buttons{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 50px;
+}
+
+
+
+.button-project {
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+           0px 1px 2px rgba(0, 0, 0, 0.08),
+           0px 2px 2px rgba(0, 0, 0, 0.12);
+
+height: 38px;
+background-color: $medium-bg-color;
+border: 0;
+border-radius: 4px;
+line-height: 1.63;
+font-weight: 500;
+font-size: 16px;
+color: #000;
+margin-right: 8px;
+padding: 6px 22px;
+cursor: pointer;
+font-family: $main-font-family;
+transition: all 0.3s ease;
+}
+
+.btn-active {
+    background-color: $accent-color;
+    color: $main-bg-color;
+}
+.button-project:hover{
+   background-color: $accent-color;
+   color: $main-bg-color;
+}
+
+
+
+/* modal__botton-x */
+
+.modal__button {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: backgound 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__button:hover {
+    background: $accent-color;
+    fill: $main-bg-color;
+    cursor: pointer;
+}  
+
+
+.button-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.button-icon .header__icon, .spacial__icon, .subscription__icon--button {
+    margin-left: 10px;
+}

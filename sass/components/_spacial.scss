@@ -1,0 +1,25 @@
+.spacials{
+    padding-bottom: 0px;
+}
+
+.spacial:not(:last-child) {
+    margin-right: 30px;
+}
+
+.spacial {
+    width: 270px;
+    font-size: 14px;
+}
+
+li > .spacial-heading {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $header-color;
+    margin-bottom: 10px;
+    letter-spacing: 0.03em;
+}
+
+.spacial-text{
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}

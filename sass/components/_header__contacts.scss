@@ -1,0 +1,31 @@
+.header__contacts {
+    list-style: none;
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+
+}
+
+.header__contacts li{
+    margin-right: 50px;
+
+}
+
+
+.header__email-contact, .header__phone {
+    text-decoration: none;
+    color: $main-color;
+}
+
+.header__contacts a:hover, .header__contacts a:focus {
+    text-decoration: none;
+    color: $accent-color;
+}
+
+.container .header__contacts{
+    margin-left:auto;
+}
+
+.header__email-contact, .header__phone {
+    display: flex;
+}

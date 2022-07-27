@@ -1,0 +1,29 @@
+.header__logo{
+    font-family: $secondary-font-family;
+    font-size: 26px;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 00.03em;
+    text-decoration: none;
+}
+
+/*logo-footer*/
+
+.logo, .bottom {
+    display: block;
+    color: $main-bg-color;
+
+}
+
+.logo {
+    font-family: $secondary-font-family;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.span {
+    color: $accent-color;
+}

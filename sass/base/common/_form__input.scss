@@ -1,0 +1,14 @@
+
+.form .button {
+    display: block;
+    margin: 0 auto;
+}
+
+.form__input:focus, .form__field:focus .form__icon, .form__field:focus-within .input__icon {
+    border-color: $accent-color;
+    fill: $accent-color;
+}
+
+.form__input:focus ~ .form__icon {
+    fill: $accent-color;
+}

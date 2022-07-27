@@ -1,0 +1,53 @@
+.header__link-active--marker, .header__link {
+    position: relative;
+    padding-bottom: 25px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+}
+
+.header__menu a {
+    color: $header-color;
+    text-decoration: none;
+    padding: 32px 0px;
+    display: inline-block;
+}
+
+
+
+li > .header__link-active, .header__link:hover, .header__menu a:focus{
+    
+    
+    color: $accent-color;
+   
+}
+
+.header__link-active.header__link-active--marker::after, .header__link:hover::after, .header__link:focus::after {
+    transform: scale(1);
+}
+
+
+
+.header__link-active::after, .header__link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 4px;
+    bottom: -1px;
+    right: 0;
+    width: 100%;
+    background-color: $accent-color;
+    transform: scale(0);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+    
+    border-radius: 2px
+}
+
+
+.header__menu a:hover, .header__link-active {
+    color: #2196F3;
+}
