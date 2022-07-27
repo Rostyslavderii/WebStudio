@@ -25,20 +25,19 @@ li > .header__link, .header__link, .header__menu a{
 }
 }
 
-.header__link-active.header__link-active--marker, .header__link:hover, .header__link:focus{
+.header__link-active.header__link-active--marker{
     &::after{
     
     transform: scale(1);
 }
 }
 
-// .header__link,
-// .header__link-active.header__link-active--marker {
-//     &:hover::after,
-//     &:focus::after {
-//       transform: scale(1);
-//   }
-//   }
+.header__link{
+    &:hover::after,
+    &:focus::after {
+      transform: scale(1);
+  }
+  }
 
 
 
