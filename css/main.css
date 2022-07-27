@@ -332,7 +332,7 @@ body {
   margin: 0 auto;
 }
 
-.form__input:focus, .form__field:focus .form__icon, .form__field:focus-within .input__icon {
+.form__input:focus, .form__field .form__icon:focus, .form__field:focus-within .input__icon:focus {
   border-color: #2196f3;
   fill: #2196f3;
 }
@@ -456,7 +456,7 @@ body {
   display: inline-block;
 }
 
-li > .header__link-active, .header__link:hover, .header__menu a:focus {
+li > .header__link-active, li > .header__link:hover, li > .header__link:focus, .header__link-active, .header__link:hover, .header__link:focus, .header__menu a-active, .header__menu a:hover, .header__menu a:focus {
   color: #2196f3;
 }
 
@@ -487,7 +487,11 @@ li > .header__link-active, .header__link:hover, .header__menu a:focus {
   border-radius: 2px;
 }
 
-.header__menu a:hover, .header__link-active {
+.header__menu a:hover {
+  color: #2196F3;
+}
+
+.header__link-active {
   color: #2196F3;
 }
 
@@ -512,12 +516,15 @@ li > .header__link-active, .header__link:hover, .header__menu a:focus {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.adress-item:not(:first-child) .adress-link:hover,
-.adress-item:not(:first-child) .adress-link:focus {
+.adress-item:not(:first-child) .adress-link:hover, .adress-item:not(:first-child) .adress-link:focus {
   color: #2196f3;
 }
 
 .adress-link:hover,
+.adress-link:hover {
+  color: #2196f3;
+}
+.adress-link:focus,
 .adress-link:focus {
   color: #2196f3;
 }
@@ -688,7 +695,7 @@ nav {
   font-size: 14px;
 }
 
-.header__menu a:hover, .header__link-active {
+.header__menu a:hover, .header__menu a-active, .header__link:hover, .header__link-active {
   color: #2196F3;
 }
 

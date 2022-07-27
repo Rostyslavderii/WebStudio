@@ -13,8 +13,10 @@
     
     }
 
-    .header__menu li:last-child, .header__contacts li:last-child {
+    .header__menu li, .header__contacts li {
+        &:last-child{
         margin-right: 0px;
+    }
     }
     
    
@@ -28,14 +30,18 @@
         }
 
         
-.header__menu a:hover, .header__link-active {
+.header__menu a, .header__link {
+    &:hover,
+    &-active {
     color: #2196F3;
+}
 }
 
 .header__menu li {
     position: relative;
     width: 100%;
 }
+
 
         
        

@@ -4,9 +4,11 @@
     margin: 0 auto;
 }
 
-.form__input:focus, .form__field:focus .form__icon, .form__field:focus-within .input__icon {
+.form__input, .form__field .form__icon, .form__field:focus-within .input__icon {
+    &:focus {
     border-color: $accent-color;
     fill: $accent-color;
+}
 }
 
 .form__input:focus ~ .form__icon {

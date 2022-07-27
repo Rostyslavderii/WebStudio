@@ -18,18 +18,30 @@
 
 /* adress-icons */
 
-.adress-item:not(:first-child)  .adress-link{
+.adress-item {
+    &:not(:first-child)  .adress-link {
     color: rgba(255, 255, 255, 0.6);
 }
-
-.adress-item:not(:first-child)  .adress-link:hover,
-.adress-item:not(:first-child)  .adress-link:focus{
-color: $accent-color; 
 }
 
-.adress-link:hover,
-.adress-link:focus {
-color: $accent-color;
+.adress-item {
+    &:not(:first-child) .adress-link{
+        &:hover,
+        &:focus {
+            color: $accent-color; 
+        }
+    }
+
+}
+
+.adress-link,
+.adress-link {
+    &:hover {
+    color: $accent-color;
+}
+    &:focus {
+        color: $accent-color;
+    }
 }
 
 .adress-link {
