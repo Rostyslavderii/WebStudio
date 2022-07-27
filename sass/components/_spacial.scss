@@ -2,6 +2,15 @@
     padding-bottom: 0px;
 }
 
+.spacial:not(:last-child) {
+    margin-right: 30px;
+}
+
+.spacial {
+    width: 270px;
+    font-size: 14px;
+}
+
 li > .spacial-heading {
     text-transform: uppercase;
     font-weight: 700;

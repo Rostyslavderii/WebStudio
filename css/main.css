@@ -851,7 +851,7 @@ nav {
   line-height: 1.15;
   text-align: center;
   margin-bottom: 12px;
-  color: var(--header-color);
+  color: #212121;
 }
 
 /* network-icons */
@@ -974,6 +974,15 @@ a {
 
 .spacials {
   padding-bottom: 0px;
+}
+
+.spacial:not(:last-child) {
+  margin-right: 30px;
+}
+
+.spacial {
+  width: 270px;
+  font-size: 14px;
 }
 
 li > .spacial-heading {
