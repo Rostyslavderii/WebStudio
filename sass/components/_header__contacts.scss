@@ -17,9 +17,12 @@
     color: $main-color;
 }
 
-.header__contacts a:hover, .header__contacts a:focus {
+.header__contacts a {
+    &:hover,
+    &:focus {
     text-decoration: none;
     color: $accent-color;
+}
 }
 
 .container .header__contacts{
