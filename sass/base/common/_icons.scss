@@ -5,6 +5,23 @@
     align-self: center;
 }
 
+.form__input,
+{
+    &:focus
+ {
+  border-color: $accentColor;
+  fill: $accentColor;
+}
+}
+
+.form__field {
+    &:focus-within .form__icon{
+        border-color: $accentColor;
+     fill: $accentColor;
+    }
+}
+
+
 .header__contacts .header__icon, .spacial__icon, .network__icon {
  margin-right: 10px;
 }
