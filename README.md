@@ -1,2 +1,2 @@
-# goit-markup-hw-07
-https://rostyslavderii.github.io/goit-markup-hw-07/
+# Pet project
+https://rostyslavderii.github.io/WebStudio/
