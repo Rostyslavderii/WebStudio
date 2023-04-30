@@ -1,15 +1,32 @@
 
 /* subscription */
 
+// .subscription {
+//     margin-left: auto;
+//     padding-top: 12px;
+//     align-self: flex-start;
+// }
+
 .subscription {
+  @include mq(not-desktop) {
+    text-align: center;
+  }
+
+  @include mq(desktop) {
     margin-left: auto;
-    padding-top: 12px;
-    align-self: flex-start;
+  }
+}
+
+.subscription__field {
+     @include mq(not-desktop) {
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .subscription__input {
     padding: 15px 16px;
-    margin-right: 12px;
     width: 358px;
     height: 50px;
     border: none;
@@ -20,6 +37,9 @@
     font-size: 16px;
     line-height: 1.25;
     color: rgba(255, 255, 255, 0.6);
+
+    @include mq(tablet) {margin-right: 12px;}
+    @include mq(not-desktop) {margin-bottom: 20px;}
 }
 
 .subscription__input:focus {

@@ -1,0 +1,107 @@
+.menu-btn {
+  display: none;
+
+  @include mq(mobile-only) {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    z-index: 11;
+
+    display: block;
+    padding: 0;
+
+    border: none;
+    color: $logo;
+    background-color:$main-bg-color;
+
+    transition: color $animation;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+   }
+}
+
+.menu-btn__icon {
+  fill: currentColor;
+}
+
+.menu-btn__open {
+  display: block;
+
+  .is-open & {
+    display: none;
+  }
+}
+
+.menu-btn__close {
+  display: none;
+
+  .is-open & {
+    display: block;
+  }
+}
+.mobile-menu {
+  @include mq(tablet) {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+  }
+}
+
+.mobile-menu {
+  @include mq(mobile-only) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+
+    transform: translateX(100%);
+    visibility: hidden;
+    transition: transform $animation, visibility $animation;
+
+    &.is-open {
+      z-index: 1;
+      transform: translateX(0);
+      visibility: visible;
+      overflow-y: scroll;
+    }
+
+    padding: 48px 15px 48px 40px;
+    width: 100%;
+    height: 100vh;
+
+    background-color: getBgColor('primary');
+  }
+}
+
+.mobile-menu__socials {
+  display: none;
+
+  @include mq(mobile-only) {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+}
+
+.mobile-menu__item:not(:last-child) {
+  display: flex;
+  gap: 10px;
+
+  &::after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 1px;
+    background-color: rgba(33, 33, 33, 0.2);
+  }
+}
+
+.mobile-menu__link {
+  display: block;
+  font-weight: 500;
+ @include textStyle($accent-color, 18px, calc(22 / 18), 0.02em);
+}

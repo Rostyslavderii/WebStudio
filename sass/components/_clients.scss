@@ -1,0 +1,10 @@
+
+
+.list {
+@include flexBox();
+@include mq(mobile-only){ 
+    gap: 30px;
+    }
+flex-wrap: wrap;
+
+}

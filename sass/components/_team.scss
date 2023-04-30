@@ -13,6 +13,7 @@
 }
 
 .team-item {
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,6 +22,7 @@
     border-bottom-right-radius: 4px;
     transition: all 0.3s ease;
     background-color: $main-bg-color;
+    
 }
 
 
@@ -37,7 +39,7 @@
 
 .team-item-header{
     font-weight: 500;
-    font-style: 16px;
+    font-size: 16px;
     letter-spacing: 0.03em;
     color: $header-color;
     margin-bottom: 10px;
@@ -46,7 +48,7 @@
 }
 
 .team-item-text {
-    font-style: 16px;
+    font-size: 16px;
     letter-spacing: 00.03em;
     line-height: inherit;
     text-align: center;
@@ -55,7 +57,16 @@
 }
 
 .team-item:not(:last-child) {
-    margin-right: 30px;
+
+    @include mq(tablet){
+ margin-right: 30px;
+        }
+
+        @include mq(mobile-only){
+            margin-bottom: 30px;
+            }
+   
+
 }
 
 .team-social-list {

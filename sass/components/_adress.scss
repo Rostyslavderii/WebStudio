@@ -1,9 +1,6 @@
 
 /*adress-footer*/
 
-.adress {
-    padding-bottom: 60px;
-}
 
 .adress-item {
     margin-bottom: 9px;
@@ -37,6 +34,15 @@ color: $accent-color;
 }
 
 .footer-list {
+  @include mq(tablet) {
     display: flex;
-    align-items: center;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  @include mq(tablet-only) {
+    flex-wrap: wrap;
+    column-gap: 165px;
+    row-gap: 60px;
+  }
 }

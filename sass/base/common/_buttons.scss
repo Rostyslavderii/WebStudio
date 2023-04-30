@@ -1,21 +1,39 @@
 
 /*button-banner*/
+main {
+  @include mq(mobile-only) {
+    padding-top: 61px;
+  }
+}
 
 .banner .button, .subscription .button, .form .button{
-    height: 50px;
-    width: 200px;
-    color: #fff;
-    background-color: $accent-color;
-    border: 0;
-    border-radius: 4px;
-    font-size: 16px;
-    line-height: 1.87px;
-    font-weight: 700;
-    letter-spacing: 0.06em;
-    margin: 0px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    cursor: pointer;
-    transition: all 0.3s ease;
+display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+  min-width: 200px;
+  max-height: 50px;
+  background-color: #2196f3;
+  font-family: inherit;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 @media screen and (min-width: 375px){

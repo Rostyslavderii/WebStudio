@@ -1,10 +1,9 @@
 
 /* network-icons */
 
-.network-container {
-    margin-left: 85px;
-    padding-top: 12px;
-    align-self: flex-start;
+.socials {
+  @include flexBox();
+
 }
 
 .call-of-action {
@@ -15,4 +14,19 @@
     font-size: inherit;
     line-height: 1.14;
     text-transform: uppercase;
+}
+
+
+.network-container {
+  @include mq(mobile-only) {
+    margin-bottom: 60px;
+  }
+
+  text-align: center;
+
+  @include mq(desktop) {
+    margin-left: 85px;
+
+    text-align: left;
+  }
 }

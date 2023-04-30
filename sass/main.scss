@@ -1,6 +1,8 @@
 // utils
 @import 'utils/reset';
 @import 'utils/variables';
+@import './utils/visually-hidden';
+@import './utils/mixins';
 // @import 'components/common';
 
 
@@ -22,7 +24,9 @@
 @import 'base/common/thumb'; 
 
 // components
+@import 'components/clients';
 @import 'components/_header__link';
+@import 'components/_mobile-menu';
 @import 'components/adress';
 @import 'components/clients__link';
 @import 'components/footer';
