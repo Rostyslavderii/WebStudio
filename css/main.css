@@ -196,7 +196,7 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -211,6 +211,11 @@ body {
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
   }
 }
 /*button-banner*/
