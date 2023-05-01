@@ -23,15 +23,17 @@
     font-size: 14px;
 
     @include mq(tablet) {
-            display: flex;
+        display: flex;
+    margin-left: 88px;
+    }
+        @include mq(desktop) {
     margin-left: 93px;
-
     }
 
      }
 
 .header__contacts li:last-child {
-       
+
         @include mq(tablet){
          margin-right: 0px;
     }

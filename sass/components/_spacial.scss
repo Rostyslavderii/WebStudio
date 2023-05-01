@@ -2,20 +2,26 @@
      @include mq(desktop) {
     padding-bottom: 0px;
   }
+  
 }
 
+.spacials__list{
+         @include mq(tablet) {
+    display: flex;
+gap: 30px;
+flex-wrap: wrap;
+  }
+    }
+
+
 .spacial{
-    // width: 270px;
     font-size: 14px;
 &:not(:last-child) {
-    @include mq(tablet){
-        display: flex;
-        flex-wrap: wrap;
-    margin-right: 30px;
-    }
+    
     @include mq(mobile-only) {
       margin-bottom: 30px;
     }
+}
      @include mq(tablet) {
     flex-basis: calc((100% - 30px) / 2);
   }
@@ -23,14 +29,13 @@
   @include mq(desktop) {
     flex-basis: calc((100% - 30px * 3) / 4);
   }
-}
+
 }
 
 .thumb {
      @include flexBox();
     margin-bottom: 30px;
-    padding: 25px 100px;
-    background-color: $medium-bg-color;
+background-color: $medium-bg-color;
     border-radius: 4px;
       height: 120px;
   max-width: 450px;

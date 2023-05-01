@@ -11,6 +11,7 @@
     {
     font-size: 40px;
 }
+
 }
 
 .header__menu a {
@@ -39,7 +40,7 @@ li > .header__link-active, .header__link:hover, .header__menu a:focus{
 
 
 .header__link-active::after, .header__link::after {
-    @include mq(table){
+    @include mq(tablet){
     content: '';
     position: absolute;
     left: 0;

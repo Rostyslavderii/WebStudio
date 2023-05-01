@@ -6,13 +6,24 @@
 
 @media screen and (min-width: 768px) {
 .team {
-    display: block;
-    width: 354px;
-    height: 374px;
+display: block;
+max-width: 100%;
+height: auto;
 }
 }
 
 .team-item {
+
+      max-width: 450px;
+
+  @include mq(tablet) {
+    max-width: 354px;
+  }
+
+  @include mq(desktop) {
+    max-width: 270px;
+  }
+
 
     display: flex;
     flex-direction: column;
@@ -58,9 +69,6 @@
 
 .team-item:not(:last-child) {
 
-    @include mq(tablet){
- margin-right: 30px;
-        }
 
         @include mq(mobile-only){
             margin-bottom: 30px;

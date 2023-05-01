@@ -26,8 +26,10 @@
 
 
 nav{
-    margin-bottom: auto;
 
+      @include mq(mobile-only) {
+    margin-bottom: auto;
+  }
      @include mq(tablet) {
          display: flex;
     align-items: center;
