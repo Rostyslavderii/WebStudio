@@ -1,31 +1,44 @@
  /*header-menu*/
  .header__menu li{
-    margin-right: 50px;
+    &:last-child { 
+    @include mq(tablet){
+    margin-right: 0px;
+    }
+    @include mq(mobile-only){
+         margin-bottom: 32px;
+    }
+        }
+    @include mq(tablet){
+         margin-right: 50px;
+    }
+     @include mq(mobile-only){
+         margin-bottom: 32px;
+    }
     
 }
 
 .header__menu{
     list-style: none;
-    display: flex;
-    margin-left: 93px;
     font-weight: 500;
     font-size: 14px;
-    
+
+    @include mq(tablet) {
+            display: flex;
+    margin-left: 93px;
+
     }
 
-    .header__menu li:last-child, .header__contacts li:last-child {
-        margin-right: 0px;
+     }
+
+.header__contacts li:last-child {
+       
+        @include mq(tablet){
+         margin-right: 0px;
+    }
+    
     }
     
    
-    .header__menu{
-        list-style: none;
-        display: flex;
-        margin-left: 93px;
-        font-weight: 500;
-        font-size: 14px;
-        
-        }
 
         
 .header__menu a:hover, .header__link-active {

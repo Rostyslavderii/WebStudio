@@ -1,17 +1,25 @@
 .header__link-active--marker, .header__link {
     position: relative;
+    @include mq(tablet){
     padding-bottom: 25px;
+    }
     font-weight: 500;
-    font-size: 14px;
+    
     line-height: 1.14;
     letter-spacing: 0.02em;
-
+    @include mq(mobile-only)
+    {
+    font-size: 40px;
+}
 }
 
 .header__menu a {
     color: $header-color;
     text-decoration: none;
+    @include mq(tablet){
     padding: 32px 0px;
+    }
+
     display: inline-block;
 }
 
@@ -31,6 +39,7 @@ li > .header__link-active, .header__link:hover, .header__menu a:focus{
 
 
 .header__link-active::after, .header__link::after {
+    @include mq(table){
     content: '';
     position: absolute;
     left: 0;
@@ -45,6 +54,7 @@ li > .header__link-active, .header__link:hover, .header__menu a:focus{
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
     
     border-radius: 2px
+}
 }
 
 

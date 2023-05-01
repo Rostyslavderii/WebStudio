@@ -73,7 +73,7 @@
     width: 100%;
     height: 100vh;
 
-    background-color: getBgColor('primary');
+    background-color: $main-bg-color;
   }
 }
 
@@ -90,7 +90,7 @@
 .mobile-menu__item:not(:last-child) {
   display: flex;
   gap: 10px;
-
+  
   &::after {
     content: '';
     display: block;

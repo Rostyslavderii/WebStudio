@@ -1,5 +1,4 @@
 .header-content{
-   
     border-bottom: 1px solid;
     border-color:#ECECEC;
 }
@@ -27,7 +26,13 @@
 
 
 nav{
-    display: flex;
+    margin-bottom: auto;
+
+     @include mq(tablet) {
+         display: flex;
     align-items: center;
+    
+  }
+   
 }
 

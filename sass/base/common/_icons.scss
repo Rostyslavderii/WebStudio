@@ -5,6 +5,21 @@
     align-self: center;
 }
 
+.header__icon {
+    svg {
+@include mq(mobile-only) {
+    display: none;
+}
+}
+}
+
+.header__phone{
+    svg {
+@include mq(mobile-only) {
+    display: none;
+}
+}
+}
 .header__contacts .header__icon, .spacial__icon, .network__icon {
  margin-right: 10px;
 }

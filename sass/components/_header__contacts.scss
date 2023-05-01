@@ -1,14 +1,27 @@
 .header__contacts {
+    @include mq(table) {
+         display: flex;
+          font-size: 14px;
+        }
     list-style: none;
-    display: flex;
+   font-size: 24px;
     font-weight: 500;
-    font-size: 14px;
+    line-height: calc(28 / 24);
 
+      @include mq(mobile-only) {
+    margin-bottom: 64px;
+  }
+  @include mq(mobile-only) {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 32px;
+  }
 }
 
 .header__contacts li{
+    @include mq(table){
     margin-right: 50px;
-
+}
 }
 
 
@@ -23,9 +36,22 @@
 }
 
 .container .header__contacts{
+    @include mq(table){
     margin-left:auto;
+}
 }
 
 .header__email-contact, .header__phone {
     display: flex;
+    @include mq(mobile-only){
+         color: $accent-color;
+      font-size: 34px;
+      line-height: calc(40 / 34);
+
+      @media screen and (max-width: 350px) {
+        font-size: 9vw;
+      }
+    white-space: nowrap;
+
+}
 }
