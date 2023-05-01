@@ -1224,6 +1224,10 @@ nav {
   opacity: 0;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .modal {
   display: -webkit-box;
   display: -ms-flexbox;

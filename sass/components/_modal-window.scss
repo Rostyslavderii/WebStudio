@@ -17,6 +17,10 @@
     opacity: 0;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .modal {
     display: flex;
     flex-direction: column;
@@ -38,11 +42,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-
     width: 450px;
-
     transition: transform $animation;
-
     .backdrop--is-hidden & {
       transform: translate(-50%, -50%) scale(0.7);
     }
@@ -50,7 +51,7 @@
 
   @include mq(desktop) {
     min-width: 528px;
-    min-height: 581px;
+    min-height: 581px;  
   }
 }
 
