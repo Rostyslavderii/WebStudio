@@ -25,13 +25,33 @@
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     padding: 40px;
-    width: 528px;
-    height: 581px;
+  max-width: 450px;
+  width: calc(100% - 30px);
+
     background: #ffffff;
     box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
     border-radius: 4px;
     opacity: 1;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@include mq(tablet) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+
+    width: 450px;
+
+    transition: transform $animation;
+
+    .backdrop--is-hidden & {
+      transform: translate(-50%, -50%) scale(0.7);
+    }
+  }
+
+  @include mq(desktop) {
+    min-width: 528px;
+    min-height: 581px;
+  }
 }
 
 .blackdrop.is-hidden .modal {
