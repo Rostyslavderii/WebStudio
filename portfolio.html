@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,38 +25,83 @@
   <!---->
   <body>
     <header class="header-content">
-      <div class="container flexbox">
-        <nav>
-          <a class="header__logo" href="./index.html"
-            ><span class="span">Web</span>Studio</a
+      <div class="container flexbox header__container">
+        <a class="header__logo" href="./index.html"
+          ><span class="span">Web</span>Studio</a
+        >
+        <button
+          type="button"
+          class="menu-btn"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="mobile menu button"
+          data-menu-button=""
+        >
+          <svg
+            class="menu-btn__icon"
+            height="40"
+            width="40"
+            aria-label="Переключатель меню"
           >
-          <ul class="header__menu">
-            <li><a class="header__link" href="./index.html">Студия</a></li>
-            <li>
-              <a class="header__link-active" href="./portfolio.html"
-                >Портфолио</a
-              >
+            <use
+              class="menu-btn__open"
+              href="./images/sprite-menu.svg#icon-menu"
+            ></use>
+            <use
+              class="menu-btn__close"
+              href="./images/sprite-menu.svg#icon-close"
+            ></use>
+          </svg>
+        </button>
+        <div class="mobile-menu" id="mobile-menu" data-menu="">
+          <nav>
+            <ul class="header__menu">
+              <li>
+                <a class="header__link" href="./index.html">Студия</a>
+              </li>
+              <li>
+                <a
+                  class="header__link-active header__link-active--marker"
+                  href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li><a class="header__link" href="/">Контакты</a></li>
+            </ul>
+          </nav>
+          <ul class="header__contacts">
+            <li class="contacts__item">
+              <a class="header__icon envelope" href="mailto:info@devstudio.com">
+                <svg class="contacts__icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
-            <li><a class="header__link" href="/">Контакты</a></li>
+            <li class="contacts__item">
+              <a class="header__phone" href="tel:+380961111111">
+                <svg class="header__icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
           </ul>
-        </nav>
-        <ul class="header__contacts">
-          <li>
-            <a class="header__email-contact" href="mailto:ingo@devstudio.com">
-              <svg class="header__icon envelope" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"></use></svg
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="header__phone" href="tel:380961111111">
-              <svg class="header__icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+          <ul class="mobile-menu__socials">
+            <li class="mobile-menu__item">
+              <a href="" class="mobile-menu__link">Instagram</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="" class="mobile-menu__link">Twitter</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="" class="mobile-menu__link">Facebook</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="" class="mobile-menu__link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!--main-->
@@ -283,7 +328,7 @@
     <!-- footer -->
     <footer class="bottom" id="contacts">
       <div class="container footer-list">
-        <div class="">
+        <div class="footer__contacts">
           <a class="logo" href="/"><span class="span">Web</span>Studio</a>
           <address>
             <ul class="adress">
@@ -308,41 +353,41 @@
         <!-- networks -->
         <div class="network-container">
           <p class="call-of-action">присоединяйтесь</p>
-          <ul class="flexbox">
+          <ul class="socials">
             <li class="network">
               <a class="social-network" href="" aria-label="instagram">
-                <svg class="network__icon" width="20" height="20">
+                <svg class="subscription__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="network">
               <a class="social-network" href="" aria-label="twitter">
-                <svg class="network__icon" width="20" height="20">
+                <svg class="subscription__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="network">
               <a class="social-network" href="" aria-label="facebook">
-                <svg class="network__icon" width="20" height="20">
+                <svg class="subscription__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="network">
               <a class="social-network" href="" aria-label="linkedin">
-                <svg class="network__icon" width="20" height="20">
+                <svg class="subscription__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <!-- sub-->
+        <!-- subs -->
         <form class="subscription">
           <p class="call-of-action">Подпишитесь на рассылку</p>
-          <div class="subscription__form flexbox">
+          <div class="subscription__form">
             <label class="subscription__field">
               <input
                 class="subscription__input"
@@ -365,5 +410,7 @@
         </form>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
